@@ -86,6 +86,12 @@ General
 1. <https://github.com/pre-commit/pre-commit>
 2. <https://pre-commit.com>
 
+## Programming Languages: `swift`
+
+General
+
+1. <https://docs.swift.org/swift-book>
+
 ## Software Engineering
 
 Continuous Integration/Development (CI/CD)
