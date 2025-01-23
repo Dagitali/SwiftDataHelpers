@@ -29,11 +29,7 @@ let package = Package(
             name: "SwiftDataHelpers"
         ),
         .testTarget(
-            name: "PersistentModelTests",
-            dependencies: ["SwiftDataHelpers"]
-        ),
-        .testTarget(
-            name: "TimestampedModelTests",
+            name: "SwiftDataHelpersTests",
             dependencies: ["SwiftDataHelpers"]
         ),
     ]
