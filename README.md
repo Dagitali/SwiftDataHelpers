@@ -21,9 +21,15 @@ readability, and adopt reusable patterns tailored for modern Swift apps and pack
 
 🔧 **Extensions**
 
-Enhance your SwiftData types with powerful, reusable extensions:
+Enhance native SwiftData types with new properties and functions:
 
 * `ModelContainer`
+
+🛠 **Custom Protocols**
+
+Formalize common patterns by conforming data-related abstraction (e.g., models) to new protocols:
+
+* `TimestampedModel`
 
 ## Installation
 
