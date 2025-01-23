@@ -19,13 +19,13 @@ import Testing
 
 // MARK: - Fixtures
 
-enum CodingKeys: CodingKey {
+private enum CodingKeys: CodingKey {
     case name
 }
 
-// A sample `Model`` conforming to `PersistentModel`` and `Codable`.`
+// A sample `Model`` conforming to `PersistentModel`.
 @Model
-final class SampleModel: Codable {
+private final class MockModel: Codable {
     // MARK: Properties
 
     // Keys
@@ -76,13 +76,13 @@ struct PersistentModelTests {
     /// expected serialized properties of the model.
     @Test
     func testToJSON() {
-        // Arrange
-        let sample = SampleModel(name: "Test Model")
+        // Given...
+        let sample = MockModel(name: "Test Model")
 
-        // Act
+        // When...
         let jsonData = sample.toJSON()
 
-        // Assert
+        // Then...
         #expect(
             jsonData != nil,
             "JSON data is nil."
@@ -106,7 +106,7 @@ struct PersistentModelTests {
     /// instance. Ensures the resulting model has the expected property values.
     @Test
     func testFromJSON() {
-        // Arrange
+        // Given...
         let jsonString = """
             {
                 "id": 1,
@@ -115,10 +115,10 @@ struct PersistentModelTests {
             """
         let jsonData = jsonString.data(using: .utf8)
 
-        // Act
-        let model = SampleModel.fromJSON(jsonData!)
+        // When...
+        let model = MockModel.fromJSON(jsonData!)
 
-        // Assert
+        // Then...
         #expect(
             model != nil,
             "Model is nil."
