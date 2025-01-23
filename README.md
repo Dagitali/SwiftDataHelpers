@@ -41,7 +41,7 @@ To integrate SwiftDataHelpers into your project:
 2. Navigate to **File > Add Packages**.
 3. Enter the URL for this repository:
 
-   <https://github.com/yourusername/SwiftDataHelpers>
+   <https://github.com/Dagitali/SwiftDataHelpers>
 
 4. Select the latest version and add it to your target.
 
