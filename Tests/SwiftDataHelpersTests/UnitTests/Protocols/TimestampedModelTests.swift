@@ -19,7 +19,7 @@ import Testing
 
 // MARK: - Fixtures
 
-// A mock `Model`` conforming to `TimestampedModel`.
+// A mock `Model` conforming to `TimestampedModel`.
 @Model
 private final class MockModel: TimestampedModel {
     // MARK: Properties
