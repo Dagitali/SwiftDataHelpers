@@ -23,7 +23,7 @@ private enum CodingKeys: CodingKey {
     case name
 }
 
-// A mock `Model`` conforming to `PersistentModel`.
+// A mock `Model` conforming to `PersistentModel`.
 @Model
 private final class MockModel: Codable {
     // MARK: Properties
