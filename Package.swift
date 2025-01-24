@@ -18,8 +18,8 @@ let package = Package(
         // making them visible to other packages.
         .library(
             name: "SwiftDataHelpers",
-            targets: ["SwiftDataHelpers"])
-        ,
+            targets: ["SwiftDataHelpers"]
+        ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a
