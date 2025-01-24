@@ -19,7 +19,7 @@ import Testing
 
 // MARK: - Fixtures
 
-// A sample `Model`` conforming to `TimestampedModel`.
+// A mock `Model`` conforming to `TimestampedModel`.
 @Model
 private final class MockModel: TimestampedModel {
     // MARK: Properties
@@ -94,7 +94,7 @@ struct TimestampedModelTests {
     /// extension, where `updateTimestamps` updates only `updatedAt` while
     /// keeping `createdAt` unchanged when `createdAt` is already set.
     ///
-    /// This verifies the protocol handles updates correctly without altering
+    /// This ensures the protocol handles updates correctly without altering
     /// the original creation timestamp.
     @Test
     func testUpdateTimestamps_whenCreatedAtIsNotNil_updatesOnlyUpdatedAt() {

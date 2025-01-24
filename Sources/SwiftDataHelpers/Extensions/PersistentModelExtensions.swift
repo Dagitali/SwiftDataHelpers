@@ -9,7 +9,7 @@
  See the LICENSE.txt file for this package’s licensing information.
 
  Abstract:
- Helper extensions to `PersistentModel`.
+ Helper extensions for reducing SwiftData boilerplate with respect to `PersistentModel`.
 */
 
 import Foundation
@@ -17,7 +17,7 @@ import SwiftData
 
 // MARK: - Public (Codable Conformance)
 
-/// An extension for `PersistentModel` types conforming to `Codable`.
+/// An extension for `PersistentModel` types conforming to `Codable` to provide additional functions.
 public extension PersistentModel where Self: Codable{
     // MARK: Methods
 
