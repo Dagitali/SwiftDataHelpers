@@ -23,7 +23,8 @@ readability, and adopt reusable patterns tailored for modern Swift apps and pack
 
 Enhance native SwiftData types with new properties and functions:
 
-* `ModelContainer`
+* `ModelContext`
+* `PersistentModel`
 
 🛠 **Custom Protocols**
 
