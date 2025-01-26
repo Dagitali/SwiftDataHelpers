@@ -27,23 +27,23 @@ public extension ModelContainer {
 
     /// Creates a default `ModelContainer` with optional in-memory storage.
     /// - Parameters:
-    ///   - models: The schema to register with the container.
+    ///   - schema: The schema to register with the container.
     ///   - inMemory: Whether the container should use in-memory storage.
     /// - Returns: A configured `ModelContainer` or throws an error if
     ///   initialization fails.
     @MainActor static func defaultContainer(
-        for models: Schema,
+        for schema: Schema,
         inMemory: Bool = false
     ) -> ModelContainer {
         let configuration = ModelConfiguration(isStoredInMemoryOnly: inMemory)
 
         do {
             return try ModelContainer(
-                for: models,
+                for: schema,
                 configurations: [configuration]
             )
         } catch {
-            fatalError("Failed to initialize model container.")
+            fatalError("Failed to initialize model container: \(error.localizedDescription).")
         }
     }
 
