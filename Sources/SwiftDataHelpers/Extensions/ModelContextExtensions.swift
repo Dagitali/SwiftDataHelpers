@@ -56,18 +56,26 @@ public extension ModelContext {
 
 /// An extension for `ModelContext` to provide additional functions.
 public extension ModelContext {
+    // MARK: Batch Operations
+
+    /// Inserts a batch of persistent model objects into the context and saves
+    /// the changes.
+    /// - Parameter objects: An array of objects conforming to
+    ///   `PersistentModel` to be inserted.
+   func insertAll<T: PersistentModel>(_ objects: [T]) {
+        objects.forEach { insert($0) }
+        saveSafely()
+    }
+
     // MARK: Utilities
 
-    /// Safely Saves all pending changes to the model context.
+    /// Safely saves all pending changes to the model context.
     ///
     /// Attempts to persist all modifications made within the current
     /// `ModelContext` to the underlying storage. Logs any errors that occur
     /// during the save operation.
     ///
-    /// - Note: If no changes are present in the context, this method has
-    /// no effect.
-    ///
-    /// ### Example
+    /// ## Example
     /// ```swift
     /// let context = ModelContext()
     /// let newItem = MyModel()
@@ -76,6 +84,9 @@ public extension ModelContext {
     ///
     /// context.saveSafely() // Persist the changes
     /// ```
+    ///
+    /// - Note: If no changes are present in the context, this method has no
+    ///   effect.
     func saveSafely() {
         do {
             try save()
