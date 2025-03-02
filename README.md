@@ -1,5 +1,19 @@
 # SwiftDataHelpers
 
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Dagitali/SwiftDataHelpers?sort=semver)
+![Build Status](https://github.com/Dagitali/SwiftDataHelpers/actions/workflows/lint.yml/badge.svg)
+![Build Status](https://github.com/Dagitali/SwiftDataHelpers/actions/workflows/test.yml/badge.svg)
+![Build Status](https://github.com/Dagitali/SwiftDataHelpers/actions/workflows/release.yml/badge.svg)
+![Build Status](https://github.com/Dagitali/SwiftDataHelpers/actions/workflows/document.yml/badge.svg)
+![Build Status](https://github.com/Dagitali/SwiftDataHelpers/actions/workflows/publish.yml/badge.svg)
+![Codecov](https://codecov.io/gh/Dagitali/SwiftDataHelpers/branch/main/graph/badge.svg)
+![GitHub](https://img.shields.io/github/license/Dagitali/SwiftDataHelpers)
+![GitHub issues](https://img.shields.io/github/issues/Dagitali/SwiftDataHelpers)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Dagitali/SwiftDataHelpers)
+![GitHub top language](https://img.shields.io/github/languages/top/Dagitali/SwiftDataHelpers)
+![GitHub repo size](https://img.shields.io/github/repo-size/Dagitali/SwiftDataHelpers)
+![GitHub contributors](https://img.shields.io/github/contributors/Dagitali/SwiftDataHelpers)
+
 A Swift package that includes an integrated collection of SwiftData extensions and related custom
 abstractions.
 
