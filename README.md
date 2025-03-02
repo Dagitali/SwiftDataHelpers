@@ -3,6 +3,19 @@
 A Swift package that includes an integrated collection of SwiftData extensions and related custom
 abstractions.
 
+- [SwiftDataHelpers](#swiftdatahelpers)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Installation](#installation)
+    - [Using Swift Package Manager (SPM)](#using-swift-package-manager-spm)
+  - [Testing](#testing)
+  - [Documentation](#documentation)
+    - [Community Health](#community-health)
+    - [Project](#project)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
+
 ## Overview
 
 SwiftDataHelpers is a Swift package designed to complement SwiftData, Apple’s native framework for
