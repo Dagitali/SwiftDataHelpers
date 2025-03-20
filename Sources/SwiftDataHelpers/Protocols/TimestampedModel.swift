@@ -22,6 +22,7 @@ import SwiftUI
 /// This protocol defines properties for managing the creation and update
 /// timestamps of a model. It can be adopted by models to standardize the
 /// handling of these timestamps in your app.
+@available(iOS 18.0, macOS 15.0, tvOS 18.0, visionOS 2.0, watchOS 11.0, *)
 public protocol TimestampedModel {
     /// The timestamp when the model was created.
     var createdAt: Date? { get set }
@@ -32,6 +33,7 @@ public protocol TimestampedModel {
 
 // MARK: - Public (Protocol Defaults)
 
+@available(iOS 18.0, macOS 15.0, tvOS 18.0, visionOS 2.0, watchOS 11.0, *)
 public extension TimestampedModel {
     /// Updates the `createdAt` and `updatedAt` timestamps for the model.
     ///
