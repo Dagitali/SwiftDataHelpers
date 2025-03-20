@@ -18,6 +18,7 @@ import SwiftData
 // MARK: - Public (Codable Conformance)
 
 /// An extension for `PersistentModel` types conforming to `Codable` to provide additional functions.
+@available(iOS 18.0, macOS 15.0, tvOS 18.0, visionOS 2.0, watchOS 11.0, *)
 public extension PersistentModel where Self: Codable{
     // MARK: Methods
 

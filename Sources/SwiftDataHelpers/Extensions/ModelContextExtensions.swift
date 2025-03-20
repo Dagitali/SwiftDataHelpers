@@ -30,6 +30,7 @@ import SwiftData
 // MARK: - Public (Computed Properties)
 
 /// An extension for `ModelContext` to provide additional computed properties.
+@available(iOS 18.0, macOS 15.0, tvOS 18.0, visionOS 2.0, watchOS 11.0, *)
 public extension ModelContext {
     // MARK: SQLLite
 
@@ -55,6 +56,7 @@ public extension ModelContext {
 // MARK: - Public (Functions)
 
 /// An extension for `ModelContext` to provide additional functions.
+@available(iOS 18.0, macOS 15.0, tvOS 18.0, visionOS 2.0, watchOS 11.0, *)
 public extension ModelContext {
     // MARK: Batch Operations
 
