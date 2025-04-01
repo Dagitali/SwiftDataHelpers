@@ -49,14 +49,14 @@ readability, and adopt reusable patterns tailored for modern Swift apps and pack
 
 ### Extensions
 
-Enhance native SwiftData types with new properties and functions:
+Enhance native SwiftData types with new properties and methods:
 
 - `ModelContext`
 - `PersistentModel`
 
 🛠 **Custom Protocols**
 
-Formalize common patterns by conforming data-related abstraction (e.g., models) to new protocols:
+Formalize common patterns by conforming data-related types (e.g., models) to new protocols:
 
 - `TimestampedModel`
 
