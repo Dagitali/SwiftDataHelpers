@@ -20,6 +20,7 @@ abstractions.
 - [SwiftDataHelpers](#swiftdatahelpers)
   - [Overview](#overview)
   - [Features](#features)
+    - [Extensions](#extensions)
   - [Installation](#installation)
     - [Using Swift Package Manager (SPM)](#using-swift-package-manager-spm)
   - [Testing](#testing)
@@ -38,26 +39,26 @@ types, such as `ModelContainer`.
 
 This package focuses on providing practical, reusable extensions and abstractions that:
 
-* Simplify common patterns in SwiftData.
-* Extend SwiftData’s capabilities without overriding or replacing its native functionality.
+- Simplify common patterns in SwiftData.
+- Extend SwiftData’s capabilities without overriding or replacing its native functionality.
 
 By integrating SwiftDataHelpers into your project, you can reduce boilerplate code, improve
 readability, and adopt reusable patterns tailored for modern Swift apps and packages.
 
 ## Features
 
-🔧 **Extensions**
+### Extensions
 
 Enhance native SwiftData types with new properties and functions:
 
-* `ModelContext`
-* `PersistentModel`
+- `ModelContext`
+- `PersistentModel`
 
 🛠 **Custom Protocols**
 
 Formalize common patterns by conforming data-related abstraction (e.g., models) to new protocols:
 
-* `TimestampedModel`
+- `TimestampedModel`
 
 ## Installation
 
@@ -89,12 +90,12 @@ follow.
 
 ### Community Health
 
-* [Code of Conduct](CODE_OF_CONDUCT.md)
-* [Contributing](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Contributing](CONTRIBUTING.md)
 
 ### Project
 
-* [References](REFERENCES.md)
+- [References](REFERENCES.md)
 
 ## Contributing
 
